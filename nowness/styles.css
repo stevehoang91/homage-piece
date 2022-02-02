@@ -532,7 +532,33 @@ html {
   margin-right: 45px;
 }
 
-.menubtn {
-  padding-left: 14px;
+.menu-bar1,
+.menu-bar2,
+.menu-bar3 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 4px 0;
+}
+
+.burger-shower {
+  display: none;
+}
+
+.burger-shower:checked ~ .burger-menu {
+  display: block;
+}
+
+.hamburger {
+  display: block;
+  width: 3.4em;
+  height: 2.4em;
+  line-height: 0.1em;
+  border: 0.1em solid #ddd;
+  padding: 0 0.4em 0.4em;
+}
+
+.burger-menu {
+  display: none;
 }
 /*# sourceMappingURL=styles.css.map */

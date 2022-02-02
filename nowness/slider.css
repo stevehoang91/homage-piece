@@ -484,43 +484,65 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-* {
+html {
   margin: 0;
   padding: 0;
+  width: 100%;
+  padding-top: 5px;
 }
 
-.slider-section {
-  font-family: "Jost";
-  width: 100%;
+.logo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 16.5938px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.topbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  gap: 20px;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
 }
 
-.slider-section-date {
-  text-align: center;
-  font-size: 11px;
-  padding-bottom: 7px;
+.search_icon,
+.play_icon,
+.profile_icon {
+  width: 17px;
+  height: 20px;
+  padding-left: 9px;
 }
 
-.slider-section-image {
-  max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 142px;
-  max-width: 200px;
+.search_icon {
+  padding-right: 5px;
 }
 
-.slider-section-title {
-  text-align-last: center;
-  font-size: 14px;
-  max-width: 200px;
+.iconbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 45px;
+}
+
+.menubtn {
+  width: 18px;
+  padding-left: 14px;
+}
+
+.menu-bar1,
+.menu-bar2,
+.menu-bar3 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 4px 0;
 }
 /*# sourceMappingURL=slider.css.map */

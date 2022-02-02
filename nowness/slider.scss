@@ -592,35 +592,56 @@
     U+FEFF, U+FFFD;
 }
 
-* {
+html {
   margin: 0;
   padding: 0;
-}
-
-.slider-section {
-  font-family: "Jost";
   width: 100%;
+  padding-top: 5px;
+}
+
+.logo {
+  box-sizing: border-box;
+  height: 16.5938px;
+  width: 100px;
+  margin-left: 10px;
+}
+
+.topbar {
   display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  gap: 20px;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
+}
+@mixin icons {
+  width: 17px;
+  height: 20px;
+  padding-left: 9px;
+}
+.search_icon,
+.play_icon,
+.profile_icon {
+  @include icons();
+}
+.search_icon {
+  padding-right: 5px;
 }
 
-.slider-section-date {
-  text-align: center;
-  font-size: 11px;
-  padding-bottom: 7px;
+.iconbar {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  margin-right: 45px;
 }
 
-.slider-section-image {
-  max-width: 100%;
-  object-fit: cover;
-  height: 142px;
-  max-width: 200px;
+.menubtn {
+  width: 18px;
+  padding-left: 14px;
 }
 
-.slider-section-title {
-  text-align-last: center;
-  font-size: 14px;
-  max-width: 200px;
+.menu-bar1,
+.menu-bar2,
+.menu-bar3 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 4px 0;
 }

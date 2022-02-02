@@ -50,4 +50,13 @@ html {
   width: 18px;
   padding-left: 14px;
 }
+
+.menu-bar1,
+.menu-bar2,
+.menu-bar3 {
+  width: 20px;
+  height: 1px;
+  background-color: black;
+  margin: 4px 0;
+}
 /*# sourceMappingURL=top.css.map */
