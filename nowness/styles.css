@@ -708,6 +708,7 @@ nav {
   padding-bottom: 35px;
   padding-right: 18px;
   padding-left: 18px;
+  color: #424242;
 }
 
 .slider-section {
@@ -731,8 +732,9 @@ nav {
 
 .slider-section-date {
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   padding-bottom: 7px;
+  color: #424242;
 }
 
 .slider-section-image {
@@ -747,6 +749,7 @@ nav {
   text-align: center;
   font-size: 14px;
   width: 200px;
+  color: #424242;
 }
 
 .module {
@@ -1088,5 +1091,12 @@ nav {
   font-size: 13px;
   text-align: center;
   padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 30px;
+}
+
+.footer-rights {
+  padding-bottom: 85px;
 }
 /*# sourceMappingURL=styles.css.map */

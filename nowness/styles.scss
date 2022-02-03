@@ -734,6 +734,7 @@ nav {
   padding-bottom: 35px;
   padding-right: 18px;
   padding-left: 18px;
+  color: rgb(66, 66, 66);
 }
 .slider-section {
   font-family: "Jost";
@@ -751,8 +752,9 @@ nav {
 
 .slider-section-date {
   text-align: center;
-  font-size: 12px;
+  font-size: 13px;
   padding-bottom: 7px;
+  color: rgb(66, 66, 66);
 }
 
 .slider-section-image {
@@ -766,6 +768,7 @@ nav {
   text-align: center;
   font-size: 14px;
   width: 200px;
+  color: rgb(66, 66, 66);
 }
 .module {
   display: flex;
@@ -1053,4 +1056,11 @@ nav {
   font-size: 13px;
   text-align: center;
   padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 30px;
+}
+
+.footer-rights {
+  padding-bottom: 85px;
 }
