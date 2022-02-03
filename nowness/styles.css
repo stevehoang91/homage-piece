@@ -491,7 +491,6 @@
 
 html {
   width: 100%;
-  padding-top: 5px;
   font-family: "Jost";
   margin: 0;
 }
@@ -505,13 +504,26 @@ html {
   position: absolute;
 }
 
+.top-spacing {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
+  height: 70px;
+  background-color: #fff;
+}
+
 .topbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #dcdcdc;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  top: 7px;
+  z-index: 999;
+  margin: 0px auto;
 }
 
 .search_icon,
@@ -519,11 +531,19 @@ html {
 .profile_icon {
   width: 17px;
   height: 20px;
-  padding-left: 9px;
+  position: fixed;
 }
 
 .search_icon {
-  padding-right: 5px;
+  right: 150px;
+}
+
+.play_icon {
+  right: 120px;
+}
+
+.profile_icon {
+  right: 90px;
 }
 
 .iconbar {
@@ -560,10 +580,12 @@ html {
   line-height: 2.63;
   width: 390px;
   position: relative;
+  margin-top: 37px;
 }
 
 .topbar li ul {
-  padding: 10px 20px;
+  padding: 0px 20px;
+  margin: 0;
 }
 
 .menu_social {
@@ -630,6 +652,9 @@ nav {
   font-size: 13px;
   line-height: 13px;
   padding-right: -100px;
+  position: fixed;
+  top: 28px;
+  z-index: 999;
 }
 
 .navlist {
@@ -683,6 +708,7 @@ nav {
           align-items: center;
   max-width: 100%;
   border-bottom: 1px solid #c29663;
+  padding-top: 72px;
 }
 
 .main-hero-h2 {
