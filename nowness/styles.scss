@@ -540,24 +540,30 @@
 }
 // Font above
 
-html {
+* {
   margin: 0;
   padding: 0;
+}
+
+html {
   width: 100%;
   padding-top: 5px;
+  font-family: "Jost";
 }
 
 .logo {
   box-sizing: border-box;
   height: 16.5938px;
   width: 100px;
-  margin-left: 10px;
+  margin-left: 40px;
+  position: absolute;
 }
 
 .topbar {
   display: flex;
   border-bottom: 1px solid #dcdcdc;
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 @mixin icons {
   width: 17px;
@@ -580,12 +586,6 @@ html {
   margin-right: 45px;
 }
 
-// .menubtn {
-//   width: 18px;
-//   padding-left: 14px;
-// }
-
-
 .menu-bar1,
 .menu-bar2,
 .menu-bar3 {
@@ -593,6 +593,63 @@ html {
   height: 1px;
   background-color: black;
   margin: 4px 0;
+}
+
+ul {
+  list-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  background-color: rgb(247, 247, 247);
+  font-family: "Jost";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 2.63;
+  width: 390px;
+}
+// padding-left: 20px;
+
+li ul {
+  padding: 10px 20px;
+}
+
+.menu_social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 7px;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+
+@mixin border {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.menu_line {
+  @include border;
+}
+
+.menu_line_down {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+ul > li > ul {
+  display: none;
+  list-style-position: inside;
+  padding-left: 0;
+  padding-top: 0;
+}
+
+ul > li:hover ul {
+  display: block;
 }
 
 .burger-shower {
@@ -605,13 +662,11 @@ html {
 
 .hamburger {
   display: block;
-  width: 3.4em;
-  height: 2.4em;
   line-height: 0.1em;
-  border: 0.1em solid #ddd;
   padding: 0 0.4em 0.4em;
 }
 
 .burger-menu {
   display: none;
+  padding-top: 10px;
 }

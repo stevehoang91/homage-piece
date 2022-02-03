@@ -654,3 +654,32 @@ ul li ul {
 ul li:hover ul {
   display: block;
 }
+
+.burger-shower {
+  display: none;
+}
+
+.burger-shower:checked ~ .burger-menu {
+  display: block;
+}
+
+.hamburger {
+  display:block;
+  width: 3.4em;
+  height: 2.4em;
+  line-height: .1em;
+  border: .1em solid #ddd;
+  padding: 0 .4em .4em;
+}
+
+.hamburger hr {
+  color: #ddd;
+  height: .1em;
+  border: 0;
+  background: #ddd;
+  /* border: none; */
+}
+
+.burger-menu {
+   display:none;
+}

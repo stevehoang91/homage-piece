@@ -487,18 +487,16 @@
 * {
   margin: 0;
   padding: 0;
-}
-
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
   max-width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.container {
+html {
+  width: 100%;
+  padding-top: 5px;
+  font-family: "Jost";
+}
+
+.module {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -506,38 +504,42 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  max-width: auto;
+}
+
+.module span {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #363636;
+}
+
+.module img {
+  -o-object-fit: cover;
+     object-fit: cover;
   max-width: 100%;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.module h2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 18px;
+}
+
+.module p {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 18px;
+  padding-bottom: 30px;
+}
+
+.module-section-3 {
+  padding-bottom: 30px;
   border-bottom: 1px solid #c29663;
 }
-
-.main-hero-h2 {
-  font-family: "Jost";
-  font-size: 24px;
-  margin-bottom: 10px;
-  font-weight: 700;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: block;
-  -webkit-margin-before: 1.3em;
-          margin-block-start: 1.3em;
-  -webkit-margin-after: 0.83em;
-          margin-block-end: 0.83em;
-}
-
-.main-hero-p {
-  font-family: "Jost";
-  max-width: 100%;
-  font-size: 13px;
-  text-align: center;
-  margin: 0;
-  padding-bottom: 35px;
-  padding-right: 18px;
-  padding-left: 18px;
-}
-/*# sourceMappingURL=main_hero.css.map */
+/*# sourceMappingURL=module.css.map */

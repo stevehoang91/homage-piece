@@ -592,56 +592,40 @@
     U+FEFF, U+FFFD;
 }
 
-html {
+* {
   margin: 0;
   padding: 0;
-  width: 100%;
-  padding-top: 5px;
 }
 
-.logo {
-  box-sizing: border-box;
-  height: 16.5938px;
-  width: 100px;
-  margin-left: 10px;
-}
-
-.topbar {
+.slider-section {
+  font-family: "Jost";
+  max-width: 100%;
   display: flex;
-  border-bottom: 1px solid #dcdcdc;
-  padding-bottom: 10px;
-}
-@mixin icons {
-  width: 17px;
-  height: 20px;
-  padding-left: 9px;
-}
-.search_icon,
-.play_icon,
-.profile_icon {
-  @include icons();
-}
-.search_icon {
-  padding-right: 5px;
+  gap: 20px;
+  flex-direction: row;
+  padding-left: 70px;
+  padding-top: 30px;
+  padding-right: 70px;
+  overflow: scroll;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(194, 150, 99);
 }
 
-.iconbar {
-  display: flex;
-  justify-content: flex-end;
-  flex: 1;
-  margin-right: 45px;
+.slider-section-date {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 7px;
 }
 
-.menubtn {
-  width: 18px;
-  padding-left: 14px;
+.slider-section-image {
+  object-fit: cover;
+  height: 142px;
+  max-width: 200px;
+  padding-bottom: 5px;
 }
 
-.menu-bar1,
-.menu-bar2,
-.menu-bar3 {
-  width: 20px;
-  height: 1px;
-  background-color: black;
-  margin: 4px 0;
+.slider-section-title {
+  text-align: center;
+  font-size: 14px;
+  width: 200px;
 }
