@@ -513,16 +513,4 @@ nav {
       -ms-flex-align: center;
           align-items: center;
 }
-
-li ul {
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 15px;
-  text-align: center;
-  padding: 14px;
-  text-decoration: none;
-  width: 20px;
-  height: 100px;
-}
 /*# sourceMappingURL=navbar.css.map */

@@ -489,7 +489,7 @@
   padding: 0;
 }
 
-img {
+.mainhero img {
   -o-object-fit: cover;
      object-fit: cover;
   max-width: 100%;
@@ -498,7 +498,7 @@ img {
   margin-right: auto;
 }
 
-.container {
+.container-mainhero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

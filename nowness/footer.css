@@ -496,7 +496,7 @@ html {
   font-family: "Jost";
 }
 
-.social-icons {
+.footer-social-media .social-icons {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;

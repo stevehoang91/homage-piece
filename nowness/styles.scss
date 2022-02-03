@@ -549,6 +549,7 @@ html {
   width: 100%;
   padding-top: 5px;
   font-family: "Jost";
+  margin: 0;
 }
 
 .logo {
@@ -595,7 +596,7 @@ html {
   margin: 4px 0;
 }
 
-ul {
+.topbar ul {
   list-style: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   box-sizing: border-box;
@@ -605,10 +606,11 @@ ul {
   font-weight: 600;
   line-height: 2.63;
   width: 390px;
+  position: relative;
 }
 // padding-left: 20px;
 
-li ul {
+.topbar li ul {
   padding: 10px 20px;
 }
 
@@ -656,17 +658,399 @@ ul > li:hover ul {
   display: none;
 }
 
-.burger-shower:checked ~ .burger-menu {
+.topbar .burger-shower:checked ~ .burger-menu {
   display: block;
 }
 
-.hamburger {
+.topbar .hamburger {
   display: block;
   line-height: 0.1em;
   padding: 0 0.4em 0.4em;
+  padding-left: 10px;
 }
 
-.burger-menu {
+.topbar .burger-menu {
   display: none;
   padding-top: 10px;
+}
+
+nav {
+  font-family: "Jost";
+  font-size: 13px;
+  line-height: 13px;
+  padding-right: -100px;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 400px;
+  grid-column-gap: 45px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 43px;
+  align-items: center;
+  color: #484848;
+}
+.mainhero img {
+  object-fit: cover;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container-mainhero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  border-bottom: 1px solid rgb(194, 150, 99);
+}
+
+.main-hero-h2 {
+  font-family: "Jost";
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  box-sizing: border-box;
+  display: block;
+  margin-block-start: 1.3em;
+  margin-block-end: 0.83em;
+}
+
+.main-hero-p {
+  font-family: "Jost";
+  max-width: 100%;
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 35px;
+  padding-right: 18px;
+  padding-left: 18px;
+}
+.slider-section {
+  font-family: "Jost";
+  max-width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  padding-left: 70px;
+  padding-top: 30px;
+  padding-right: 70px;
+  overflow: scroll;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgb(194, 150, 99);
+}
+
+.slider-section-date {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 7px;
+}
+
+.slider-section-image {
+  object-fit: cover;
+  height: 142px;
+  max-width: 200px;
+  padding-bottom: 5px;
+}
+
+.slider-section-title {
+  text-align: center;
+  font-size: 14px;
+  width: 200px;
+}
+.module {
+  display: flex;
+  flex-direction: column;
+  max-width: auto;
+}
+
+.module span {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #363636;
+}
+
+.module img {
+  object-fit: cover;
+  max-width: 100%;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.module h2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 18px;
+}
+
+.module p {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 18px;
+  padding-bottom: 30px;
+}
+
+.module-section-3 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(194, 150, 99);
+}
+
+.most-watched {
+  display: flex;
+  flex-direction: column;
+  max-width: auto;
+}
+
+.most-watched span {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  color: #363636;
+}
+
+.most-watched img {
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.most-watched h2 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 18px;
+  text-align: center;
+  padding-top: 13px;
+  line-height: 1.1em;
+}
+
+.most-watched p {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 18px;
+  text-align: center;
+  color: #515151;
+}
+
+.most-watched-2 {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(194, 150, 99);
+}
+.share-the-love {
+  display: flex;
+  flex-direction: column;
+  max-width: auto;
+}
+
+.share-the-love span {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #363636;
+}
+
+.share-the-love img {
+  margin: auto;
+  //   display: block;
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 10px;
+}
+
+.share-the-love p {
+  font-size: 13px;
+  font-weight: 400;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 30%;
+  height: 40px;
+  color: #191919;
+}
+
+.share-the-love-section-2 img {
+  padding-top: 30px;
+}
+
+.share-the-love-section-2 {
+  border-bottom: 1px solid rgb(194, 150, 99);
+  padding-bottom: 20px;
+}
+.join .join-title {
+  font-family: "Jost";
+  text-align: center;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  box-sizing: border-box;
+  font-size: 15px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 10px;
+}
+
+.join .join-box {
+  font-size: 13px;
+  font-weight: 400;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 70%;
+  height: 40px;
+  color: #191919;
+}
+
+.join .join-member {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 18px;
+}
+
+.join a:link {
+  color: rgb(211, 180, 143);
+  text-decoration: none;
+}
+
+.join-connect-spacing {
+  height: 90px;
+}
+
+.connect h2 {
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(38, 38, 38);
+}
+
+.social-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 60px;
+  justify-items: center;
+  padding-top: 40px;
+}
+
+.join-connect-bottom {
+  height: 70px;
+  border-bottom: 1px solid rgb(194, 150, 99);
+}
+.more-to-love {
+  display: flex;
+  flex-direction: column;
+  max-width: auto;
+  text-align: center;
+}
+
+.more-to-love h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
+  color: #525252;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.more-to-love h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  color: #969696;
+  text-align: left;
+  margin-left: 90px;
+  width: 215px;
+}
+
+.more-to-love img {
+  margin: auto;
+  //   display: block;
+  display: flex;
+  justify-content: center;
+  width: 55%;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 12px;
+}
+
+.more-to-love p {
+  font-size: 16px;
+  font-family: "Jost";
+  font-weight: 400;
+  line-height: 1.18em;
+  text-align: left;
+  margin: auto;
+  width: 55%;
+  height: 40px;
+  color: #949494;
+  letter-spacing: 0px;
+}
+
+.more-to-love-section-2 img,
+.more-to-love-section-3 img {
+  padding-top: 70px;
+}
+
+.more-to-love-section-3 {
+  border-bottom: 1px solid rgb(194, 150, 99);
+  padding-bottom: 150px;
+}
+.footer-social-media .social-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 60px;
+  justify-items: center;
+  padding-top: 40px;
+  border-bottom: 1px solid rgb(194, 150, 99);
+  padding-bottom: 30px;
+}
+
+.footer-links h3 {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.footer-links {
+  padding-bottom: 50px;
+}
+
+.footer-rights h3 {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  padding-top: 40px;
 }
