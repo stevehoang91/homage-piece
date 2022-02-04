@@ -551,6 +551,26 @@ html {
   margin: 0;
 }
 
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo {
   box-sizing: border-box;
   height: 16.5938px;
@@ -564,7 +584,7 @@ html {
   position: fixed;
   top: 0px;
   z-index: 2;
-  height: 70px;
+  height: 75px;
   background-color: #fff;
 }
 
@@ -579,7 +599,131 @@ html {
   top: 7px;
   z-index: 999;
   margin: 0px auto;
+  margin-top: 5px;
 }
+
+@media screen and (min-width: 600px) {
+  .logo {
+    margin-left: 50px;
+  }
+  .hamburger {
+    margin-left: 10px;
+  }
+  .main-hero-h2 {
+    position: relative;
+    top: -130px;
+    color: #fff;
+    text-align: center;
+  }
+  body .main-hero-p {
+    position: relative;
+    top: -150px;
+    color: #fff;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  body .container-mainhero {
+    display: block;
+    height: 300px;
+    padding-bottom: 40px;
+  }
+  body .module-content {
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 20px;
+    justify-items: center;
+  }
+  body .module img {
+    max-width: 100%;
+  }
+  body .module span {
+    font-size: 23px;
+    padding: 35px 0;
+  }
+  body .module h2 {
+    font-size: 19px;
+    height: 60px;
+  }
+  body .module p {
+    color: rgb(66, 66, 66);
+    padding-bottom: 0px;
+    padding-right: 0px;
+    width: 200px;
+  }
+  body .module-section-3 {
+    border-bottom: none;
+  }
+  body .module-line {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(194, 150, 99);
+  }
+  body .most-watched span {
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  body .most-watched img {
+    max-width: 50%;
+    margin: auto;
+  }
+  body .most-watched h2 {
+    font-size: 18px;
+    padding-top: 20px;
+  }
+  body .most-watched p {
+    width: 55%;
+    margin: auto;
+  }
+  body .most-watched-2 {
+    padding-bottom: 35px;
+  }
+  body .share-the-love span {
+    font-size: 24px;
+    font-weight: 300;
+    padding: 30px 0;
+  }
+  body .share-the-love-section-1 {
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 150px;
+    margin: auto;
+  }
+  body .share-the-love img {
+    max-width: 100%;
+  }
+  body .share-the-love p {
+    width: 100px;
+  }
+  body .share-the-love-section-1-hidden {
+    display: block;
+  }
+  body .hidden-combined {
+    display: flex;
+    flex-direction: column;
+  }
+  body .share-the-love-section-1-hidden p {
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: #101010;
+    width: 150px;
+  }
+  body .share-the-love-section-1-hidden svg {
+    padding-left: 60px;
+  }
+  body .share-the-love-section-1 :nth-child(3) {
+    font-size: 13px;
+  }
+  body .hidden-combined {
+    padding-top: 35px;
+  }
+}
+
+.share-the-love-section-1-hidden {
+  display: none;
+}
+
 @mixin icons {
   width: 17px;
   height: 20px;
@@ -618,6 +762,35 @@ html {
   margin: 4px 0;
 }
 
+.menu-bar1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.menu-bar2 {
+  transform-origin: 0% 0%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-bar3 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.burger-shower:checked ~ .hamburger .menu-bar1 {
+  transform: rotate(45deg);
+  background-color: rgb(194, 150, 99);
+}
+
+.burger-shower:checked ~ .hamburger .menu-bar2 {
+  transform: scaleY(0);
+}
+
+.burger-shower:checked ~ .hamburger .menu-bar3 {
+  transform: rotate(-45deg) translatey(2px) translatex(-3.5px);
+  background-color: rgb(194, 150, 99);
+}
+
 .topbar ul {
   list-style: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -627,9 +800,11 @@ html {
   font-size: 15px;
   font-weight: 600;
   line-height: 2.63;
-  width: 390px;
+  width: 100vw;
   position: relative;
   margin-top: 37px;
+  height: 100vh;
+  text-indent: 20px;
 }
 // padding-left: 20px;
 
@@ -716,7 +891,7 @@ nav {
   overflow-y: hidden;
   overflow-x: scroll;
   white-space: nowrap;
-  width: 400px;
+  width: 100vw;
   grid-column-gap: 45px;
   padding-left: 20px;
   padding-right: 20px;
@@ -770,9 +945,9 @@ nav {
   display: flex;
   gap: 20px;
   flex-direction: row;
-  padding-left: 70px;
+  padding-left: 15px;
   padding-top: 30px;
-  padding-right: 70px;
+  padding-right: 15px;
   overflow: scroll;
   padding-bottom: 40px;
   border-bottom: 1px solid rgb(194, 150, 99);
@@ -905,9 +1080,8 @@ nav {
   //   display: block;
   display: flex;
   justify-content: center;
-  width: 65%;
-  padding-left: 18px;
-  padding-right: 18px;
+  max-width: 65%;
+  margin: auto;
   padding-bottom: 10px;
 }
 
