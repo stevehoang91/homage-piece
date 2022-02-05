@@ -490,13 +490,40 @@
   max-width: 100%;
 }
 
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 html {
   width: 100%;
   padding-top: 5px;
   font-family: "Jost";
 }
 
-.more-to-love {
+.more-to-love-img-1,
+.more-to-love-img-2,
+.more-to-love-img-3 {
+  width: 200px;
+  height: 200px;
+}
+
+.more-to-love-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,8 +531,31 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: auto;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 50px;
+}
+
+.more-to-love-content p {
+  width: 200px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #949494;
+}
+
+.more-to-love-content h3 {
+  width: 200px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 1px;
+  color: #969696;
+  padding-top: 20px;
 }
 
 .more-to-love h2 {
@@ -519,52 +569,8 @@ html {
   padding-top: 15px;
 }
 
-.more-to-love h3 {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.35;
-  letter-spacing: 1px;
-  padding-bottom: 5px;
-  color: #969696;
-  text-align: left;
-  margin-left: 90px;
-  width: 215px;
-}
-
-.more-to-love img {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 55%;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-bottom: 12px;
-}
-
-.more-to-love p {
-  font-size: 16px;
-  font-family: "Jost";
-  font-weight: 400;
-  line-height: 1.18em;
-  text-align: left;
-  margin: auto;
-  width: 55%;
-  height: 40px;
-  color: #949494;
-  letter-spacing: 0px;
-}
-
-.more-to-love-section-2 img,
-.more-to-love-section-3 img {
-  padding-top: 70px;
-}
-
-.more-to-love-section-3 {
+.more-to-love-spacer {
+  padding-bottom: 60px;
   border-bottom: 1px solid #c29663;
-  padding-bottom: 150px;
 }
 /*# sourceMappingURL=more-to-love.css.map */

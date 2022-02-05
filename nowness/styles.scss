@@ -967,7 +967,7 @@ nav {
   gap: 10px;
 }
 
-.share-the-love-section-1-p {
+.show1 {
   width: 150px;
   font-size: 14px;
   font-weight: 400;
@@ -990,7 +990,7 @@ nav {
   padding-top: 30px;
 }
 
-.share-the-love-section-2-p {
+.show2 {
   width: 150px;
   font-size: 14px;
   font-weight: 400;
@@ -1170,6 +1170,11 @@ nav {
   display: none;
 }
 
+.hidden1,
+.hidden2 {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   .logo {
     margin-left: 50px;
@@ -1273,4 +1278,51 @@ nav {
   .connect h2 {
     font-size: 20px;
   }
+  .share-the-love-section-1 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .hidden1 {
+    display: block;
+    text-align: center;
+    line-height: 1.7em;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: #444;
+  }
+  .hidden1 svg {
+    padding-top: 10px;
+    color: #000;
+  }
+  .share-the-love-section-2 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .hidden2 {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 3em;
+    color: #444;
+    padding-bottom: 20px;
+  }
+  .hidden2 :nth-child(1) {
+    font-size: 18px;
+  }
+  .show2 {
+    margin-left: 31px;
+  }
+  .share-the-love-section-2-img-container {
+    margin-left: 35px;
+  }
+  .share-the-love span {
+    font-size: 24px;
+    padding: 40px 0px;
+    color: #444;
+    font-weight: 300;
+  }
+  
 }
