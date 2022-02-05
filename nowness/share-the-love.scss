@@ -543,7 +543,6 @@
 * {
   margin: 0;
   padding: 0;
-  max-width: 100%;
 }
 
 html {
@@ -552,51 +551,98 @@ html {
   font-family: "Jost";
 }
 
-.share-the-love {
-  display: flex;
-  flex-direction: column;
-  max-width: auto;
-}
-
 .share-the-love span {
   font-size: 18px;
-  text-align: center;
   line-height: 1.35;
   letter-spacing: 1px;
   padding-top: 15px;
   padding-bottom: 15px;
   color: #363636;
-}
-
-.share-the-love img {
-  margin: auto;
-  //   display: block;
   display: flex;
   justify-content: center;
-  width: 65%;
-  padding-left: 18px;
-  padding-right: 18px;
-  padding-bottom: 10px;
 }
 
-.share-the-love p {
-  font-size: 13px;
-  font-weight: 400;
-  border: 1px solid #000;
+.share-the-love-section-1-img-container,
+.share-the-love-section-2-img-container {
+  width: 250px;
+  height: 250px;
+}
+
+.share-the-love-section-1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  width: 30%;
-  height: 40px;
-  color: #191919;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.share-the-love-section-2 img {
-  padding-top: 30px;
+.share-the-love-section-1-p {
+  width: 150px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #000;
+  text-align: center;
+  color: #191919;
+  line-height: 40px;
+}
+
+.share-the-love-section-2-img-container img {
+  max-width: 100%;
 }
 
 .share-the-love-section-2 {
-  border-bottom: 1px solid rgb(194, 150, 99);
-  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 30px;
 }
+
+.share-the-love-section-2-p {
+  width: 150px;
+  font-size: 14px;
+  font-weight: 400;
+  border: 1px solid #000;
+  text-align: center;
+  color: #191919;
+  line-height: 40px;
+}
+
+.share-the-love-line {
+  border-bottom: 1px solid rgb(194, 150, 99);
+  padding-bottom: 25px;
+}
+
+// .share-the-love img {
+//   margin: auto;
+//   //   display: block;
+//   display: flex;
+//   justify-content: center;
+//   width: 65%;
+//   padding-left: 18px;
+//   padding-right: 18px;
+//   padding-bottom: 10px;
+// }
+
+// .share-the-love p {
+//   font-size: 13px;
+//   font-weight: 400;
+//   border: 1px solid #000;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin: auto;
+//   width: 30%;
+//   height: 40px;
+//   color: #191919;
+// }
+
+// .share-the-love-section-2 img {
+//   padding-top: 30px;
+// }
+
+// .share-the-love-section-2 {
+//   border-bottom: 1px solid rgb(194, 150, 99);
+//   padding-bottom: 20px;
+// }

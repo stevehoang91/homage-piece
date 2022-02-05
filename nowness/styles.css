@@ -569,8 +569,8 @@ a:active {
   }
   body .container-mainhero {
     display: block;
-    height: 300px;
-    padding-bottom: 40px;
+    max-width: 100%;
+    margin: auto;
   }
   body .module-content {
     display: -webkit-box;
@@ -633,7 +633,8 @@ a:active {
     font-weight: 300;
     padding: 30px 0;
   }
-  body .share-the-love-section-1 {
+  body .share-the-love-section-1,
+  body .share-the-love-section-2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -661,6 +662,7 @@ a:active {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 35px;
   }
   body .share-the-love-section-1-hidden p {
     border: none;
@@ -675,12 +677,86 @@ a:active {
   body .share-the-love-section-1 :nth-child(3) {
     font-size: 13px;
   }
-  body .hidden-combined {
-    padding-top: 35px;
+  body .share-the-love-section-2-hidden {
+    display: block;
+    padding-top: 30px;
+  }
+  body .share-the-love-section-2 img {
+    width: 255px;
+    padding-left: 110px;
+    margin: auto;
+  }
+  body .share-the-love-section-2-hidden p {
+    border: none;
+    font-size: 17px;
+    font-weight: 400;
+    color: #101010;
+    width: 150px;
+    padding-right: 80px;
+  }
+  body .share-the-love-section-2 :nth-child(3) {
+    font-size: 13px;
+    width: 180px;
+  }
+  body .share-the-love-section-2-hidden svg {
+    padding-left: 75px;
+  }
+  body .share-the-love-subscribe {
+    padding-right: 90px;
+  }
+  body .share-the-love-section-2 {
+    padding-bottom: 40px;
+  }
+  body .join .join-title {
+    font-size: 20px;
+    font-weight: 400;
+    color: #444444;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  body .join .join-box {
+    font-size: 15px;
+    width: 50%;
+  }
+  body .join-connect-spacing {
+    height: 120px;
+  }
+  body .connect h2 {
+    font-size: 20px;
+  }
+  body .more-to-love h2 {
+    font-size: 26px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 300;
+  }
+  body .more-to-love-content {
+    background-color: red;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body .more-to-love h3 {
+    width: auto;
+  }
+  body .more-to-love-section-2 img,
+  body .more-to-love-section-3 img,
+  body .more-to-love-section-1 img {
+    padding: 0;
+    width: 60%;
   }
 }
 
-.share-the-love-section-1-hidden {
+.share-the-love-section-1-hidden,
+.share-the-love-section-2-hidden {
   display: none;
 }
 
@@ -885,6 +961,10 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   color: #484848;
+}
+
+.navlist li:hover {
+  color: #c29663;
 }
 
 .mainhero img {
@@ -1136,6 +1216,7 @@ nav {
 
 .share-the-love-section-2 img {
   padding-top: 30px;
+  max-width: 54%;
 }
 
 .share-the-love-section-2 {
