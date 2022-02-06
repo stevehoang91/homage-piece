@@ -917,8 +917,15 @@ nav {
   object-fit: cover;
   display: block;
   max-width: 100%;
-  padding-left: 18px;
-  padding-right: 18px;
+  max-height: 100%;
+}
+
+.most-watched-1,
+.most-watched-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .most-watched h2 {
@@ -1251,7 +1258,15 @@ nav {
   }
   .most-watched-2 {
     padding-bottom: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
+
+  .most-watched-1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .join .join-title {
     font-size: 20px;
     font-weight: 400;
@@ -1318,6 +1333,7 @@ nav {
   }
   .more-to-love-content {
     flex-direction: row;
+    flex-wrap: wrap;
   }
   .more-to-love-section-1 {
     padding-bottom: 33px;
@@ -1407,6 +1423,10 @@ nav {
   .main-hero-play {
     top: 68%;
   }
+  .slider-section {
+    justify-content: space-evenly;
+  }
+
   .module p {
     width: auto;
   }
@@ -1425,7 +1445,13 @@ nav {
     justify-content: center;
   }
   .most-watched-2 {
+    padding-top: 13px;
+    padding-left: 20px;
     border: none;
+    margin: auto;
+  }
+  .most-watched-1 {
+    padding-right: 20px;
   }
   .most-watched-left {
     border-right: rgb(194, 150, 99) 1px solid;
@@ -1438,5 +1464,14 @@ nav {
     display: flex;
     flex-direction: columns;
     justify-content: center;
+  }
+  .burger-shower:checked ~ .hamburger .menu-bar3 {
+    transform: rotate(-45deg) translatey(2px) translatex(-5.4px);
+    background-color: rgb(194, 150, 99);
+  }
+
+  .share-the-love-section-1 {
+    display: flex;
+    flex-direction: row;
   }
 }
