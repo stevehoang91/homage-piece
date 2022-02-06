@@ -851,6 +851,15 @@ nav {
   font-size: 14px;
   width: 200px;
   color: #424242;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-filter: opacity(100%);
+          filter: opacity(100%);
+}
+
+.slider-section-title:hover {
+  -webkit-filter: opacity(70%);
+          filter: opacity(70%);
 }
 
 .module {
@@ -1095,6 +1104,26 @@ nav {
   padding-top: 30px;
 }
 
+.hidden1 p,
+.hidden1 svg,
+.hidden2 p,
+.hidden2 svg,
+.show1,
+.show2 {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hidden1 p:hover,
+.hidden1 svg:hover,
+.hidden2 p:hover,
+.hidden2 svg:hover,
+.show1:hover,
+.show2:hover {
+  color: #c29663;
+  fill: #c29663;
+}
+
 .show2 {
   width: 150px;
   font-size: 14px;
@@ -1142,6 +1171,12 @@ nav {
   width: 70%;
   height: 40px;
   color: #191919;
+  -webkit-transition: all 0.2 ease-in-out;
+  transition: all 0.2 ease-in-out;
+}
+
+.join .join-box:hover {
+  color: #c29663;
 }
 
 .join .join-member {
@@ -1176,6 +1211,15 @@ nav {
   grid-row-gap: 60px;
   justify-items: center;
   padding-top: 40px;
+}
+
+.social-icons svg {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icons svg:hover {
+  fill: #c29663;
 }
 
 .join-connect-bottom {
@@ -1266,6 +1310,12 @@ nav {
   font-size: 13px;
   text-align: center;
   padding-top: 40px;
+  -webkit-transition: all 0.2 ease-in-out;
+  transition: all 0.2 ease-in-out;
+}
+
+.footer-links h3:hover {
+  color: #c29663;
 }
 
 .footer-links {
@@ -1605,6 +1655,9 @@ nav {
   .module span {
     font-weight: 300;
     color: #000;
+  }
+  .module {
+    margin: auto;
   }
   .most-watched {
     -webkit-box-orient: horizontal;
