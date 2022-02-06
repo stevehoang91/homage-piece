@@ -1763,6 +1763,12 @@ nav {
     height: 220px;
     fill: #c29663;
   }
+  .more-to-love h2 {
+    font-size: 26px;
+    font-weight: 300;
+    color: #000;
+    padding: 40px 0px;
+  }
   .more-to-love-content {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
