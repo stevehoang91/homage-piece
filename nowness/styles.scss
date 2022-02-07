@@ -1182,18 +1182,18 @@ nav {
 .more-to-love-content p {
   width: 200px;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 20px;
-  color: #949494;
+  color: rgb(103, 103, 103);
 }
 
 .more-to-love-content h3 {
   width: 200px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.35;
   letter-spacing: 1px;
-  color: #969696;
+  color: rgb(103, 103, 103);
   padding-top: 20px;
 }
 
@@ -1202,10 +1202,9 @@ nav {
   font-weight: 400;
   line-height: 1.35;
   letter-spacing: 1px;
-  padding-bottom: 15px;
   color: #525252;
   text-align: center;
-  padding-top: 15px;
+  padding: 20px 0px;
 }
 
 .more-to-love-spacer {
@@ -1219,7 +1218,7 @@ nav {
   grid-template-rows: 1fr 1fr;
   grid-row-gap: 60px;
   justify-items: center;
-  padding-top: 40px;
+  padding-top: 30px;
   border-bottom: 1px solid rgb(194, 150, 99);
   padding-bottom: 30px;
 }
@@ -1272,6 +1271,9 @@ nav {
   .hamburger {
     margin-left: 10px;
   }
+  .navlist li {
+    padding-top: 9px;
+  }
   .main-hero-h2 {
     position: absolute;
     color: #fff;
@@ -1313,6 +1315,7 @@ nav {
     padding: 35px 0;
     font-weight: 300;
     color: #000;
+    padding: 40px 0px;
   }
   .module h2 {
     font-size: 19px;
@@ -1356,6 +1359,15 @@ nav {
   .most-watched-1 {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .most-watched-right {
+    margin-top: -25px;
+  }
+
+  .most-watched-1 img,
+  .most-watched-2 img {
+    height: 250px;
   }
 
   .join .join-title {
@@ -1423,6 +1435,10 @@ nav {
     font-weight: 300;
   }
 
+  .share-the-love-line {
+    padding-bottom: 45px;
+  }
+
   .more-to-love-content {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1447,6 +1463,11 @@ nav {
   }
   .top-spacing {
     height: 85px;
+  }
+  .more-to-love h2 {
+    font-size: 24px;
+    font-weight: 300;
+    padding: 40px 0px;
   }
 }
 
@@ -1558,7 +1579,7 @@ nav {
     justify-content: center;
   }
   .most-watched-2 {
-    padding-top: 13px;
+    padding: 0;
     padding-left: 20px;
     border: none;
     margin: auto;
@@ -1572,6 +1593,10 @@ nav {
   .most-watched-left span,
   .most-watched-right span {
     padding-top: 0;
+  }
+  .most-watched-right {
+    margin-top: 0;
+    padding-left: 100px;
   }
   .module-content {
     display: flex;

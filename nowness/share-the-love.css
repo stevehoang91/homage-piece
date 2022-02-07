@@ -495,88 +495,25 @@ html {
   font-family: "Jost";
 }
 
-.share-the-love span {
-  font-size: 18px;
-  line-height: 1.35;
-  letter-spacing: 1px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  color: #363636;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.one,
+.three,
+.five {
+  border: 5px solid red;
+  max-width: 250px;
+  max-height: 250px;
 }
 
-.share-the-love-section-1-img-container,
-.share-the-love-section-2-img-container {
+.share-the-love img {
   width: 250px;
-  height: 250px;
 }
 
-.share-the-love-section-1 {
+.share-the-love {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-}
-
-.share-the-love-section-1-p {
-  width: 150px;
-  font-size: 14px;
-  font-weight: 400;
-  border: 1px solid #000;
-  text-align: center;
-  color: #191919;
-  line-height: 40px;
-}
-
-.share-the-love-section-2-img-container img {
-  max-width: 100%;
-}
-
-.share-the-love-section-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 10px;
-  padding-top: 30px;
-}
-
-.share-the-love-section-2-p {
-  width: 150px;
-  font-size: 14px;
-  font-weight: 400;
-  border: 1px solid #000;
-  text-align: center;
-  color: #191919;
-  line-height: 40px;
-}
-
-.share-the-love-line {
-  border-bottom: 1px solid #c29663;
-  padding-bottom: 25px;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 /*# sourceMappingURL=share-the-love.css.map */
