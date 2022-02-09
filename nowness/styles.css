@@ -1608,6 +1608,11 @@ nav {
   .main-hero-play {
     top: 68%;
   }
+  .slider-section {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   .module p {
     width: auto;
   }
