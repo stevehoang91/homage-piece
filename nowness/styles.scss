@@ -774,11 +774,12 @@ nav {
 .slider-section {
   font-family: "Jost";
   max-width: 100%;
-  @include flexcenter();
+  display: flex;
+  align-content: center;
   gap: 20px;
   flex-direction: row;
   padding: 30px 15px 40px 15px;
-  overflow: scroll;
+  overflow-x: scroll;
   @include gold-bottom-border-solid();
 }
 .slider-section-date {
@@ -1375,9 +1376,6 @@ nav {
   }
   .main-hero-play {
     top: 68%;
-  }
-  .slider-section {
-    justify-content: space-evenly;
   }
   .module p {
     width: auto;

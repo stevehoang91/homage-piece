@@ -787,19 +787,15 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
   gap: 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   padding: 30px 15px 40px 15px;
-  overflow: scroll;
+  overflow-x: scroll;
   border-bottom: 1px solid #c29663;
 }
 
@@ -1611,11 +1607,6 @@ nav {
   }
   .main-hero-play {
     top: 68%;
-  }
-  .slider-section {
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
   }
   .module p {
     width: auto;
