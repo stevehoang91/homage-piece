@@ -714,6 +714,7 @@ nav {
   position: fixed;
   top: 28px;
   z-index: 999;
+  padding-top: 5px;
 }
 @mixin flexcenter {
   display: flex;
@@ -1086,6 +1087,7 @@ nav {
   font-size: 13px;
   text-align: center;
   padding: 40px 20px 0px 20px;
+  color: #525252;
   line-height: 30px;
 }
 .footer-rights {
@@ -1130,6 +1132,9 @@ nav {
   .main-hero-p {
     top: 82%;
     @include position-white-center();
+  }
+  nav {
+    padding: 0;
   }
   .container-mainhero {
     max-width: 100vw;
@@ -1337,7 +1342,7 @@ nav {
     fill: rgb(194, 150, 99);
   }
   .navbar {
-    margin-top: 50px;
+    margin-top: 42px;
   }
   .navlist {
     justify-content: space-around;
@@ -1410,10 +1415,13 @@ nav {
     margin: auto;
   }
   .most-watched-1 {
-    padding-right: 20px;
+    margin-right: -50px;
+    padding-right: 10px;
   }
   .most-watched-left {
     border-right: rgb(194, 150, 99) 1px solid;
+    margin-left: -100px;
+    margin-right: 140px;
   }
   .most-watched-left span,
   .most-watched-right span {
@@ -1421,11 +1429,13 @@ nav {
   }
   .most-watched-right {
     margin-top: 0;
-    padding-left: 100px;
+    margin-left: -100px;
+    // padding-left: 100px;
   }
   .module-content {
     @include flexcenter();
     flex-direction: columns;
+    padding-left: 40px;
   }
   .burger-shower:checked ~ .hamburger .menu-bar3 {
     transform: rotate(-45deg) translatey(2px) translatex(-5.4px);
@@ -1434,15 +1444,18 @@ nav {
   .desktop-share-the-love {
     @include flexcenter();
     flex-direction: row;
-    grid-column-gap: 100px;
+    grid-column-gap: 70px;
     padding-bottom: 40px;
   }
   .share-the-love-section-1-img-container,
   .share-the-love-section-2-img-container {
-    padding-right: 80px;
+    padding-right: 20px;
   }
   .share-the-love-section-2 {
     padding: 0;
+  }
+  .share-the-love-section-1 {
+    padding-right: 0px;
   }
   .join-and-connect {
     flex-direction: row;
@@ -1476,12 +1489,16 @@ nav {
   .more-to-love-content {
     justify-content: space-evenly;
   }
-  .footer-social-media .social-icons,
+  .footer-social-media .social-icons {
+    @include flexcenter();
+    flex-direction: row;
+    grid-column-gap: 60px;
+  }
   .footer-links,
   .footer-rights {
     @include flexcenter();
     flex-direction: row;
-    grid-column-gap: 60px;
+    grid-column-gap: 45px;
   }
   .footer-rights {
     justify-content: space-between;
