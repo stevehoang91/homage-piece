@@ -1399,7 +1399,7 @@ nav {
     margin: auto;
   }
   .module-section-3 {
-    margin-right: 40px;
+    // margin-right: 40px;
     padding: 0;
   }
   .most-watched {
@@ -1435,7 +1435,6 @@ nav {
   .module-content {
     @include flexcenter();
     flex-direction: columns;
-    padding-left: 40px;
   }
   .burger-shower:checked ~ .hamburger .menu-bar3 {
     transform: rotate(-45deg) translatey(2px) translatex(-5.4px);
