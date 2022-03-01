@@ -2,7 +2,7 @@
 
 Homage piece
 
-Built using HTML, CSS and SCSS to demostrate my ability to build and stylise a website to a professional standard.
+Built using HTML and CSS to demostrate my ability to build and implement a design to a professional standard.
 
 Was built to replicate the NOWNESS website:
 https://www.nowness.com/
